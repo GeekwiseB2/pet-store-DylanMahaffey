@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pet Store</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -48,52 +50,53 @@
 		<div class="row">
 
 			<div class="col-md-8">
-				<div class="row">
+				<div id="featured-section" class="row ">
 
 					<h1 class="featured">featured</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 				</div>
 				<div class="row">
-
-					<div class="col-xs-4">
+						<!--first product  -->
+					<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
 						<div class="row">
 						  <div class="col-xs-12 col-md-12">
 						    <div class="thumbnail">
-						      <img src="img/product1.jpg" alt="Dog bowl">
-						      <div class="caption">
+						      <img src="img/product1.jpg" alt="Dog bowl" class="img-responsive product-pic">
+						      <div class="caption product-caption">
 						        <h3>Dog Bowl</h3>
 						        <p>The best bowl for your dog.</p>
-						        <p><a href="#" class="btn btn-primary" role="button">Purchase Here</a> </p>
+						        <p><a href="#" class="btn btn-primary purchase-button" role="button">Purchase Here</a> </p>
 						      </div>
 						    </div>
 						  </div>
 						</div>
 					</div>
-					<div class="col-xs-4">
+					<!-- second product -->
+					<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
 						<div class="row">
 						  <div class="col-xs-12 col-md-12">
 						    <div class="thumbnail">
-						      <img src="img/product2.jpg" alt="Cat toy">
+						      <img src="img/product2.jpg" alt="Cat toy" class="img-responsive product-pic" />
 						      <div class="caption">
 						        <h3>Cat Toys</h3>
 						        <p>The best cat toys for your favorite cat.</p>
-						        <p><a href="#" class="btn btn-primary" role="button">Purchase Here</a> </p>
+						        <p><a href="#" class="btn btn-primary purchase-button" role="button">Purchase Here</a> </p>
 						      </div>
 						    </div>
 						  </div>
 						</div>
 					</div>
-
-					<div class="col-xs-4">
+						<!-- third product -->
+					<div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
 						<div class="row">
 						  <div class="col-xs-12 col-md-12">
 						    <div class="thumbnail">
-						      <img src="img/product3.jpg" alt="Parrot stuff">
+						      <img src="img/product3.jpg" alt="Parrot stuff" class="img-responsive product-pic">
 						      <div class="caption">
 						        <h3>Parrot Stuff</h3>
 						        <p>Parrot stuff for your parrot.</p>
-						        <p><a href="#" class="btn btn-primary" role="button">Purchase Here</a></a> </p>
+						        <p><a href="#" class="btn btn-primary purchase-button" role="button">Purchase Here</a></a> </p>
 						      </div>
 						    </div>
 						  </div>
@@ -108,18 +111,24 @@
 				<h1 class="featured">Services</h1>
 
 				<div class="row">
-					<h4 class="text-primary">Adopt a Dog</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation"><a href="#" class="services-tab">Adopt a Dog</a></li>
+					 </ul>
+					<p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 
 				<div class="row">
-					<h4 class="text-primary">Adopt a Cat</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation"><a href="#" class="services-tab">Adopt a Cat</a></li>
+					 </ul>
+					<p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 
 				<div class="row">
-					<h4 class="text-primary">Adopt a Fish</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<ul class="nav nav-pills nav-stacked">
+					  <li role="presentation"><a href="#" class="services-tab">Adopt a Fish</a></li>
+					 </ul>
+					<p class="services-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 
 			</div>
@@ -132,26 +141,24 @@
 	<div class="container-fluid foot">
 
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-lg-3 col-sm-4 col-xs-12">
 				<img src="img/petstore_logo.png" alt="Petstore" class="center-block foot-logo">
 			</div>
-			<div class="col-md-3">
-				<ul>
-					<li>Pet Store</li>
-					<li>Fresno, Ca</li>
-					<li>info@petstore.com</li>
-				</ul>
+			<div class="col-lg-3 col-sm-4 col-xs-12">
+				<address>
+					PetStore<br />
+					Fresno, CA<br />
+					PetStoreinfo@petstore.com
+				</address>
 			</div>
-			<div class="col-md-3">
-				<ul>
-					<li>Twitter</li>
-					<li>Facebook</li>
-					<li>LinkedIn</li>
-				</ul>
+			<div class="col-lg-3 col-sm-4 col-xs-12">
+				<address>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a><br />
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a><br />
+					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+				</address>
 			</div>
-			<div class="col-md-3">
 
-			</div>
 		</div>
 
 	</div>

@@ -11,7 +11,7 @@
 /*  Jumbotron section*/
 .jumbotron {
     background-image: url('../img/hero.jpg');
-    background-size: 100%;
+    background-size: cover;
     height: 600px;
     width: 100%;
     background-position: center;
@@ -39,15 +39,26 @@ p {
 
 h4 {
     font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 /* FOOTER */
 
+@media screen and (max-height: 800px) {
+    .foot {
+        background: 400px;
+    }
+}
+
 .foot {
     background: black !important;
-    height: 220px !important;
+    height: 225px !important;
     margin: 40px 0px;
-    color: white;
+    color: #999999;
 }
 
 .foot-logo {
@@ -55,13 +66,106 @@ h4 {
     margin-top: 40px;
 }
 
-.foot ul {
-    margin-top: 60px;
-}
-
-.foot li {
+address {
     list-style-type: none;
     border-left: 1px solid white;
     padding-left: 50px;
     font-size: 1.3em;
+    margin-top: 60px;
+
+}
+
+.foot a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    color: #ff827b;
+}
+
+.thumbnail {
+    background: #edf1f4;
+}
+
+.product-pic {
+    padding: 5%;
+}
+
+.purchase-button {
+    background: #5bc0de;
+    font-size: 12px;
+}
+
+.product-caption {
+    padding: 5px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#featured-section {
+    padding: 0 15px;
+}
+.services-tab {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services-tab:hover {
+    color: #ff827b;
+}
+.services-paragraph {
+    margin-bottom: 15px;
+}
+
+
+
+
+/*CONTACTS PAGE*/
+
+.nav-margin {
+    margin-bottom: 20px;
+}
+
+.nav-adj {
+    margin: 10px 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.doc-img {
+    width: 100%;
+}
+
+.doc-name {
+    font-weight: bolder;
+}
+
+.doc-des {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.map {
+    width: 100%;
+}
+
+#info {
+    width: 60%;
+    font-size: 17px;
+}
+
+.bold {
+    font-weight: bolder;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.ul {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pad {
+    padding: 10px 0;
 }
